@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<title>Video test</title>
+	<meta charset="utf-8">
+	<meta name="robots" content="index, follow" />
+
+	<meta name="author" content="Matteo Currò - curromatteo@gmail.com">
+
+	<!-- Dublin Core Metadata : http://dublincore.org/ -->
+	<meta name="DC.title" content="Project Name">
+	<meta name="DC.subject" content="What you're about.">
+	<meta name="DC.creator" content="Matteo Currò - curromatteo@gmail.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+<video id="video">
+	<source src="video/macpro.mp4" type="video/mp4">
+	<source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.webm" type="video/webm">
+	<source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">
+</video>
+<button id="speed">Fast Forward</button>
+<button id="negative">Rewind</button>
+<div id="time"></div>
+<div id="slides">
+	<section class="slide active">
+		<div class="excerpt">
+			<h1>Tramp Trousers</h1>
+		</div>
+	</section><!-- fine slide -->
+
+	<section class="slide dark active" data-loop-start="10" data-loop-end="12">
+		<div class="excerpt">
+			<h1 class="hidden">Anything but classic</h1>
+	</section><!-- fine slide -->
+
+	<section class="slide active" data-loop-start="20" data-loop-end="21">
+		<div class="excerpt">
+			<h1 class="hidden">Collection</h1>
+		</div>
+	</section><!-- fine slide -->
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/functions.js"></script>
+
+
+</body>
+
+</html>
